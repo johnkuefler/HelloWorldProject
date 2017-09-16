@@ -13,5 +13,15 @@ namespace HelloWorldProject
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddItemPage());
+        }
+
+        private void backEndButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new BackEndInteractionPage());
+        }
     }
 }

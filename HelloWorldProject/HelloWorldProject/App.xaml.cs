@@ -13,7 +13,7 @@ namespace HelloWorldProject
         {
             InitializeComponent();
 
-            MainPage = new HelloWorldProject.MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

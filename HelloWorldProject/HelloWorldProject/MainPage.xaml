@@ -5,12 +5,16 @@
              x:Class="HelloWorldProject.MainPage">
 
     <ScrollView>
+
         <StackLayout
             VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand"
             Spacing="10"
             Padding="10">
 
+            <Button Text="Simple Navigation"
+                    Clicked="Button_Clicked"/>
+            
             <Label Text="this is a label"/>
 
             <Label Text="Header"
@@ -26,7 +30,7 @@
 
             <Image Source="https://img.autobytel.com/car-reviews/autobytel/11694-good-looking-sports-cars/2016-Ford-Mustang-GT-burnout-red-tire-smoke.jpg"/>
 
-            <Button Text="Click Me!"/>
+            <Button Text="Submit"/>
         </StackLayout>
     </ScrollView>
 
