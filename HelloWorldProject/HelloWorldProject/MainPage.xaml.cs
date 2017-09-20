@@ -19,9 +19,9 @@ namespace HelloWorldProject
             Navigation.PushAsync(new AddItemPage());
         }
 
-        private void backEndButton_Clicked(object sender, EventArgs e)
+        private void Button_Clicked_1(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new BackEndInteractionPage());
+            Navigation.PushAsync(new InteractionsPage());
         }
     }
 }

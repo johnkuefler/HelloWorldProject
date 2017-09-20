@@ -14,7 +14,10 @@
 
             <Button Text="Simple Navigation"
                     Clicked="Button_Clicked"/>
-            
+
+            <Button Text="Go to back end interaction"
+                    Clicked="Button_Clicked_1"/>
+
             <Label Text="this is a label"/>
 
             <Label Text="Header"

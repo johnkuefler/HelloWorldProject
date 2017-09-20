@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldProject.InteractionsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Enter two numbers to divide" />
+
+            <Entry x:Name="firstNumberEntry" Placeholder="First number" Keyboard="Numeric"/>
+            <Entry x:Name="secondNumberEntry" Placeholder="Second number" Keyboard="Numeric"/>
+
+            <Button x:Name="interactionButton" 
+                    Text="Divide these number" 
+                    Clicked="interactionButton_Clicked"/>
+
+            <Label x:Name="resultLabel" Text=""/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
