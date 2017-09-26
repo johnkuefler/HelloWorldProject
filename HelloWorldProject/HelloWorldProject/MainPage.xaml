@@ -18,6 +18,10 @@
             <Button Text="Go to back end interaction"
                     Clicked="Button_Clicked_1"/>
 
+            <Button Text="Go to todos"
+                    x:Name="todoButton"
+                    Clicked="todoButton_Clicked"/>
+
             <Label Text="this is a label"/>
 
             <Label Text="Header"
