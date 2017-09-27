@@ -50,6 +50,9 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToDoDetail.xaml.cs">
+      <DependentUpon>ToDoDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TodoPage.xaml.cs">
       <DependentUpon>TodoPage.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TodoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToDoDetail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

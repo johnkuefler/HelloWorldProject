@@ -15,8 +15,23 @@
             <Button x:Name="cleraItemsButton"
                     Text="Clear items"
                     Clicked="clearItemsButton_Clicked"/>
-            
-            <ListView x:Name="todoList"/>
+
+            <ListView x:Name="todoList"
+                      ItemSelected="todoList_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="deleteItem_Clicked" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="15,0">
+                                <Label Text="To do:" FontAttributes="Bold"/>
+                                <Label Text="{Binding .}" TextColor="Green"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
         </StackLayout>
     </ContentPage.Content>
