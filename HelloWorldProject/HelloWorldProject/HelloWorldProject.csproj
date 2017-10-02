@@ -41,6 +41,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GridsPage.xaml.cs">
+      <DependentUpon>GridsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InteractionsPage.xaml.cs">
       <DependentUpon>InteractionsPage.xaml</DependentUpon>
     </Compile>
@@ -101,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ToDoDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

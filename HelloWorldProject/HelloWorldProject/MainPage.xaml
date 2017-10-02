@@ -22,6 +22,11 @@
                     x:Name="todoButton"
                     Clicked="todoButton_Clicked"/>
 
+            <Button Text="Go to grids"
+                    x:Name="gridsButton"
+                    Clicked="gridsButton_Clicked"/>
+
+
             <Label Text="this is a label"/>
 
             <Label Text="Header"

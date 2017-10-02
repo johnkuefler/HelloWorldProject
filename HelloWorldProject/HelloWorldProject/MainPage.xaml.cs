@@ -28,5 +28,10 @@ namespace HelloWorldProject
         {
             Navigation.PushAsync(new TodoPage());
         }
+
+        private void gridsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GridsPage());
+        }
     }
 }
