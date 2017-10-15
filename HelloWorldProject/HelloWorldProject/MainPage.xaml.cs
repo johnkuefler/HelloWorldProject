@@ -33,5 +33,15 @@ namespace HelloWorldProject
         {
             Navigation.PushAsync(new GridsPage());
         }
+
+        private void extendedListViewbutton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ExtendedListViewPage());
+        }
+
+        private void gridImageButtons_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GridImageButtonsPage());
+        }
     }
 }

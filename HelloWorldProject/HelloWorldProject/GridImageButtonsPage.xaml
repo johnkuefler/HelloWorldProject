@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldProject.GridImageButtonsPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/> <!--Spacer row-->
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Text="Calendar" 
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+
+                <Image x:Name="calendarImage"
+                       Source="calendar.png"
+                       Grid.Row="1"
+                       Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Computer"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       Grid.Row="0" 
+                       Grid.Column="1"/>
+
+                <Image x:Name="computerImage"
+                       Source="computer.png"
+                       Grid.Row="1"
+                       Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!--Spacer row-->
+
+                <Label Text="Reports"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       Grid.Row="3"
+                       Grid.Column="0"/>
+
+                <Image x:Name="reportImage"
+                       Source="reports.png"
+                       Grid.Row="4"
+                       Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Search"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       Grid.Row="3"
+                       Grid.Column="1"/>
+
+                <Image x:Name="searchImage"
+                       Source="search.png"
+                       Grid.Row="4"
+                       Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+            </Grid>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -27,6 +27,15 @@
                     Clicked="gridsButton_Clicked"/>
 
 
+            <Button Text="Extended ListView"
+                    x:Name="extendedListViewbutton"
+                    Clicked="extendedListViewbutton_Clicked"/>
+
+            <Button Text="Grid Image Buttons"
+                    x:Name="gridImageButtons"
+                    Clicked="gridImageButtons_Clicked"/>
+
+
             <Label Text="this is a label"/>
 
             <Label Text="Header"
