@@ -47,7 +47,9 @@
                        Grid.Row="1"
                        Grid.Column="1">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                        <TapGestureRecognizer 
+                            Tapped="TapGestureRecognizer_Tapped" 
+                            NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
                 </Image>
 
@@ -65,7 +67,9 @@
                        Grid.Row="4"
                        Grid.Column="0">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                        <TapGestureRecognizer 
+                            Tapped="TapGestureRecognizer_Tapped" 
+                            NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
                 </Image>
 
@@ -81,7 +85,9 @@
                        Grid.Row="4"
                        Grid.Column="1">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                        <TapGestureRecognizer 
+                            Tapped="TapGestureRecognizer_Tapped" 
+                            NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
                 </Image>
 
