@@ -6,7 +6,8 @@
         <StackLayout>
 
             <ListView x:Name="extendedListView"
-                      HasUnevenRows="True">
+                      HasUnevenRows="True"
+                      ItemSelected="extendedListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

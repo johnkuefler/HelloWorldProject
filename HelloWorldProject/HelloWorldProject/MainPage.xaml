@@ -35,6 +35,9 @@
                     x:Name="gridImageButtons"
                     Clicked="gridImageButtons_Clicked"/>
 
+            <Button Text="Go to Map"
+                    x:Name="mapButton"
+                    Clicked="mapButton_Clicked"/>
 
             <Label Text="this is a label"/>
 

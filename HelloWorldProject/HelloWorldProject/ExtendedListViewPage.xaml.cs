@@ -47,8 +47,24 @@ namespace HelloWorldProject
             this.extendedListView.ItemsSource = this.Animals;
 		}
 
+        private void extendedListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            // make sure the selected item is not null
+            if (e.SelectedItem == null)
+            {
+                return; 
+            }
 
-	}
+            // grab the selected item as our Animal class
+            Animal selectedAnimal = e.SelectedItem as Animal;
+
+            // deselect the item in the list
+            (sender as ListView).SelectedItem = null;
+
+            // Send the animal to the detail page
+            Navigation.PushAsync(new AnimalPage(selectedAnimal));
+        }
+    }
 
 
 
