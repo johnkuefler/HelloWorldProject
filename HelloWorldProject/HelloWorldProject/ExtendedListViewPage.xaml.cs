@@ -24,7 +24,10 @@ namespace HelloWorldProject
             {
                 Description = "The best animal",
                 Name = "Gorilla",
-                ImageURL = "https://i.pinimg.com/236x/ce/69/c1/ce69c1795b4afaf1ff993b79adb3a5de--western-lowland-gorilla-the-gorilla.jpg"
+                ImageURL = "https://i.pinimg.com/236x/ce/69/c1/ce69c1795b4afaf1ff993b79adb3a5de--western-lowland-gorilla-the-gorilla.jpg",
+                Weight = "1000",
+                Height = "Super tall",
+                CombatAbility = "A million"
             };
             this.Animals.Add(gorilla);
 
@@ -33,6 +36,9 @@ namespace HelloWorldProject
                 Description = "Orange with black stripes",
                 Name = "Tiger",
                 ImageURL = "https://68.media.tumblr.com/avatar_71382c4baeb0_128.png",
+                Weight = "700",
+                Height = "4 ft",
+                CombatAbility = "100"
             };
             this.Animals.Add(tiger);
 
@@ -40,7 +46,10 @@ namespace HelloWorldProject
             {
                 Description = "White with black stripes",
                 Name = "Zebra",
-                ImageURL = "https://images2.storyjumper.com/transcoder.png?trim&id=6g-kjfpa8wo45-58pw0cclj&maxw=256&maxh=256"
+                ImageURL = "https://images2.storyjumper.com/transcoder.png?trim&id=6g-kjfpa8wo45-58pw0cclj&maxw=256&maxh=256",
+                Weight = "1500",
+                Height = "6 ft",
+                CombatAbility = "Not much"
             };
             this.Animals.Add(zebra);
 
@@ -73,5 +82,9 @@ namespace HelloWorldProject
         public string ImageURL { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public string Weight { get; set; }
+        public string Height { get; set; }
+        public string CombatAbility { get; set; }
+
     }
 }

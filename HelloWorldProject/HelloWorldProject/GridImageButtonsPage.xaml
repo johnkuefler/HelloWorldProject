@@ -24,7 +24,11 @@
                        FontAttributes="Bold"
                        FontSize="24"
                        Grid.Row="0" 
-                       Grid.Column="0"/>
+                       Grid.Column="0">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
 
                 <Image x:Name="calendarImage"
                        Source="calendar.png"

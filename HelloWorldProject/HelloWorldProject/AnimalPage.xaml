@@ -17,6 +17,13 @@
                    FontAttributes="Bold"/>
 
                 <Label x:Name="descriptionLabel"/>
+
+                <Label x:Name="weightLabel"/>
+
+                <Label x:Name="heightLabel"/>
+
+                <Label x:Name="combatAbilityLabel"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
