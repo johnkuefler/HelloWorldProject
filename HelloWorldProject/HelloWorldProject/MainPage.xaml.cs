@@ -55,5 +55,10 @@ namespace HelloWorldProject
         {
             Navigation.PushAsync(new CarSelectionPage());
         }
+
+        private void azureButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AzurePage());
+        }
     }
 }
