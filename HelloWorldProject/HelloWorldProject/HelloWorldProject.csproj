@@ -53,7 +53,6 @@
     <Compile Include="ExtendedListViewPage.xaml.cs">
       <DependentUpon>ExtendedListViewPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GlobalConfig.cs" />
     <Compile Include="GridImageButtonsPage.xaml.cs">
       <DependentUpon>GridImageButtonsPage.xaml</DependentUpon>
     </Compile>
