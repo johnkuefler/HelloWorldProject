@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldProject.AzurePage">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+            <Entry x:Name="makeEntry" Placeholder="Make"/>
+            <Entry x:Name="modelEntry" Placeholder="Model"/>
+            <Button x:Name="addVehicleButton" 
+                    Text="Add Vehicle"
+                    Clicked="addVehicleButton_Clicked"/>
+
+            <Label Text="My Vehicles"/>
+
+            <ListView x:Name="vehicleListView"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="15">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Text="{Binding Make}"
+                                           FontAttributes="Bold"
+                                           FontSize="Large"
+                                           Grid.Row="0"
+                                           Grid.Column="0"/>
+
+                                    <Label Text="{Binding Model}"
+                                           Grid.Row="1"
+                                           Grid.Column="0"/>
+
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
