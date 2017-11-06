@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HelloWorldProject.Models
 {
-    class Vehicle
+    public class Vehicle
     {
         public string Id { get; set; }
         public string Make { get; set; }

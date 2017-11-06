@@ -46,5 +46,23 @@ namespace HelloWorldProject
             this.carList.Add(car);
             this.vehicleListView.ItemsSource = this.carList;
         }
+
+        private void vehicleListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            // make sure the selected item is not null
+            if (e.SelectedItem == null)
+            {
+                return;
+            }
+
+            // grab the selected item as our Animal class
+            Vehicle selectedVehicle = e.SelectedItem as Vehicle;
+
+            // deselect the item in the list
+            (sender as ListView).SelectedItem = null;
+
+            // Send the animal to the detail page
+            Navigation.PushAsync(new AzureEditPage(selectedVehicle));
+        }
     }
 }

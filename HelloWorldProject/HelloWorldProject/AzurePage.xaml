@@ -13,7 +13,8 @@
             <Label Text="My Vehicles"/>
 
             <ListView x:Name="vehicleListView"
-                      HasUnevenRows="True">
+                      HasUnevenRows="True"
+                      ItemSelected="vehicleListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

@@ -1,4 +1,5 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
+﻿using HelloWorldProject.Models;
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,6 @@ namespace HelloWorldProject
             new MobileServiceClient(
             "https://jkcsi690.azurewebsites.net"
         );
+
     }
 }

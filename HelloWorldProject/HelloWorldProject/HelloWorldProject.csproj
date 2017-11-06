@@ -44,6 +44,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AzureEditPage.xaml.cs">
+      <DependentUpon>AzureEditPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AzurePage.xaml.cs">
       <DependentUpon>AzurePage.xaml</DependentUpon>
     </Compile>
@@ -198,6 +201,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AzurePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AzureEditPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
