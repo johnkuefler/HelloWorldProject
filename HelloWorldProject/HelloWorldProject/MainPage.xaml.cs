@@ -61,5 +61,10 @@ namespace HelloWorldProject
         {
             Navigation.PushAsync(new AzurePage());
         }
+
+        private void localStorageButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LocalStoragePage());
+        }
     }
 }
