@@ -23,6 +23,10 @@ namespace HelloWorldProject
         private const string UserJson = "";
         private static readonly string UserJsonDefault = "";
 
+        private const string VehicleJson = "";
+        private static readonly string VehicleJsonDefault = "";
+
+
         public static User UserData
         {
             get
@@ -43,5 +47,27 @@ namespace HelloWorldProject
                 AppSettings.AddOrUpdateValue(UserJson, data);
             }
         }
+
+        public static Vehicle VehicleData
+        {
+            get
+            {
+                string data = AppSettings.GetValueOrDefault(VehicleJson, VehicleJsonDefault);
+                if (String.IsNullOrEmpty(data))
+                {
+                    return null;
+                }
+                else
+                {
+                    return JsonConvert.DeserializeObject<Vehicle>(data);
+                }
+            }
+            set
+            {
+                string data = JsonConvert.SerializeObject(value);
+                AppSettings.AddOrUpdateValue(VehicleJson, data);
+            }
+        }
+
     }
 }

@@ -15,5 +15,7 @@ namespace HelloWorldProject
             "https://jkcsi690.azurewebsites.net"
         );
 
+
+        public static User LoggedInUser;
     }
 }
