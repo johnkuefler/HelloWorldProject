@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldProject.FormPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10"
+                     Spacing="10">
+
+            <Label Text="Header"
+               FontSize="32"
+               TextColor="Red"
+               FontAttributes="Bold"/>
+
+            <Entry Placeholder="Enter your name"
+               FontSize="32"
+               TextColor="Blue"/>
+
+            <Editor HeightRequest="100"/>
+
+            <Image Source="https://img.autobytel.com/car-reviews/autobytel/11694-good-looking-sports-cars/2016-Ford-Mustang-GT-burnout-red-tire-smoke.jpg"/>
+
+            <Button Text="Submit" Clicked="Button_Clicked"/>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

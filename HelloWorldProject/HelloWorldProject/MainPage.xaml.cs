@@ -49,14 +49,11 @@ namespace HelloWorldProject
             Navigation.PushAsync(new MapPage());
         }
 
-        private void redCarButton_Clicked(object sender, EventArgs e)
+     
+
+        private void formButton_Clicked(object sender, EventArgs e)
         {
-
-        }
-
-        private void blueCarButton_Clicked(object sender, EventArgs e)
-        {
-
+            Navigation.PushAsync(new FormPage());
         }
     }
 }

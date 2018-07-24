@@ -18,6 +18,10 @@
             <Button Text="Go to back end interaction"
                     Clicked="Button_Clicked_1"/>
 
+            <Button Text="Go to form"
+                    x:Name="formButton"
+                    Clicked="formButton_Clicked"/>
+
             <Button Text="Go to todos"
                     x:Name="todoButton"
                     Clicked="todoButton_Clicked"/>
@@ -39,22 +43,6 @@
                     x:Name="mapButton"
                     Clicked="mapButton_Clicked"/>
 
-            <Label Text="this is a label"/>
-
-            <Label Text="Header"
-               FontSize="32"
-               TextColor="Red"
-               FontAttributes="Bold"/>
-
-            <Entry Placeholder="Enter your name"
-               FontSize="32"
-               TextColor="Blue"/>
-
-            <Editor HeightRequest="100"/>
-
-            <Image Source="https://img.autobytel.com/car-reviews/autobytel/11694-good-looking-sports-cars/2016-Ford-Mustang-GT-burnout-red-tire-smoke.jpg"/>
-
-            <Button Text="Submit"/>
         </StackLayout>
     </ScrollView>
 
