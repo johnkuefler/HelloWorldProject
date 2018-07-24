@@ -13,6 +13,11 @@ namespace HelloWorldProject
         {
             InitializeComponent();
 
+            if (Settings.UserData != null)
+            {
+                GlobalConfig.LoggedInUser = Settings.UserData;
+            }
+
             MainPage = new NavigationPage(new MainPage());
         }
 

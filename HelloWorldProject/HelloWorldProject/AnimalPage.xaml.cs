@@ -19,6 +19,9 @@ namespace HelloWorldProject
             this.animalImage.Source = animal.ImageURL;
             this.nameLabel.Text = animal.Name;
             this.descriptionLabel.Text = animal.Description;
+            this.weightLabel.Text = animal.Weight;
+            this.heightLabel.Text = animal.Height;
+            this.combatAbilityLabel.Text = animal.CombatAbility;
         }
     }
 }

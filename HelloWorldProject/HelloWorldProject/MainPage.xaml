@@ -39,6 +39,19 @@
                     x:Name="gridImageButtons"
                     Clicked="gridImageButtons_Clicked"/>
 
+            <Button Text="Cars"
+                    x:Name="carsButton"
+                    Clicked="carsButton_Clicked"/>
+
+
+            <Button Text="Local Storage Sample"
+                    x:Name="localStorageButton"
+                    Clicked="localStorageButton_Clicked"/>
+
+            <Button Text="Azure Sample"
+                    x:Name="azureButton"
+                    Clicked="azureButton_Clicked"/>
+
             <Button Text="Go to Map"
                     x:Name="mapButton"
                     Clicked="mapButton_Clicked"/>
