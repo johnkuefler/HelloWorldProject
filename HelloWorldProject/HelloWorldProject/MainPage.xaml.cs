@@ -56,5 +56,15 @@ namespace HelloWorldProject
         {
             Navigation.PushAsync(new FormPage());
         }
+
+        private void carsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CarSelectionPage());
+        }
+
+        private void localStorageButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LocalStoragePage());
+        }
     }
 }

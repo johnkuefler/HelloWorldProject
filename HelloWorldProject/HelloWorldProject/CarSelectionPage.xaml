@@ -5,7 +5,9 @@
     <ContentPage.Content>
         <StackLayout>
             <Entry x:Name="colorEntry" Placeholder="Color"/>
-            <Button x:Name="selectButton" Clicked="selectButton_Clicked"/>
+            <Button x:Name="selectButton" 
+                    Clicked="selectButton_Clicked"
+                    Text="Go"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
